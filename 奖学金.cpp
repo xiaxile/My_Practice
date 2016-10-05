@@ -12,7 +12,7 @@ struct student
 int main()
 {
 	int n,a,b,c;
-	student stu[7],t;
+	student stu[601],t;
 	cin>>n;
 	for(int i=1;i<=n;++i)
 	{
