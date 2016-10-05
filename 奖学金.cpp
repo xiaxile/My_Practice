@@ -24,11 +24,15 @@ int main()
 	for(int i=1;i<n;++i)
 		for(int j=i+1;j<=n;++j)
 			if(stu[i].sun<stu[j].sun)
+			{
 				t=stu[i]; stu[i]=stu[j]; stu[j]=t;
+			}
 	for(int i=1;i<n;++i)
 		for(int j=i+1;j<=n;++j)
 			if(stu[i].sun==stu[j].sun&&stu[i].chi<stu[j].chi)
+			{
 				t=stu[i]; stu[i]=stu[j]; stu[j]=t;
+			}
 	for(int i=1;i<=5;++i)
 		cout<<stu[i].num<<" "<<stu[i].sun<<endl;
 	return 0;
