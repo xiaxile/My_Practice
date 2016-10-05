@@ -5,6 +5,7 @@
 
 using namespace std;
 char a[100001],d[1000][100];
+long long int b[1000];
 bool is_n(char *c)
 {
 	if(*c>='0'&&*c<='9')
@@ -17,6 +18,7 @@ int main()
 	bool inum=false;
 	int z=0,p=0;
 	gets(a);
+	a[strlen(a)]=' ';
 	for(int i=0;i<strlen(a);++i)
 		if(!is_n(a+i))
 			*(a+i)=' ';
@@ -38,6 +40,8 @@ int main()
 	}
 	cout<<p<<endl;
 	for(int i=0;i<p;++i)
-		cout<<d[i]<<" ";
+		sscanf(d[i],"%lld",&b[i]);
+	for(int i=0;i<p;++i)
+		cout<<b[i]<<" ";
 	return 0;
 }
